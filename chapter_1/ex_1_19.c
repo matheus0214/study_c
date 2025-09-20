@@ -62,16 +62,6 @@ void reverse(char string[])
 			string[i] = 0;
 		}
 	}
-	// for (int i = length; i >= 0; --i) {
-	// 	printf("Index: %d adding: %c\n", k, string[i]);
-	// 	tmp[k] = string[i];
-	// 	++k;
-	// }
-
-	// tmp[k] = '\0';
-
-	// for (int i = 0; i < k; ++i)
-	// 	string[i] = tmp[i];
 }
 
 int get_current_line(char line[])
@@ -93,7 +83,7 @@ int get_current_line(char line[])
 
 int is_valid_line(char line[], int len) {
 	if (len == 0 || line[0] == NEW_LINE) {
-		return INVALID_LINE; // not a valid line
+		return INVALID_LINE;
 	}
 
 	int i;
@@ -107,5 +97,5 @@ int is_valid_line(char line[], int len) {
 		return INVALID_LINE;
 	}
 
-	return VALID_LINE; // valid by default
+	return VALID_LINE;
 }
